@@ -1,0 +1,19 @@
+Option 1 :
+Test the connexion between Client / Server
+You can use the two files I sent you and modify them
+
+Option 2 :
+Transfer a .txt file from the Client to a server based on the protocole Stop-and-Wait
+- Specify the name of the file to transfer ex. test.txt and add _cp ---> test_cp.txt before to send it
+- The file must be read line by line considering each line a frame
+- Each frame received must be confirmed by the server
+-Create a timer for the client at 1000 ms for each frame sent
+- if 1000 ms expired, consider that the the frame is lost.
+- Each frame must have an extra char. '0' when it's the first frame sent or '1' when it's the 2nd time or more
+- Remove '0' or '1' from the frame when received
+- simulate : that the 2nd is lost on the server side
+- simulate : that the 5nd is was not confirmed on the Client side
+
+Option 3:
+- The Server must create a string (or text file) and send it to the Client to list the current directory on the Server side (equivalent of ls ou DIR on MS-DOS)
+The content of the current directory o n the Server Side must be displayed on the Client one once the file received.
